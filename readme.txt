@@ -1,5 +1,5 @@
 === Sbytes Restrict Preview for Tutor LMS ===
-Contributors: salmabasuony
+Contributors: salmamohamed25
 Tags: tutor lms, lms, courses, registration, preview
 Requires at least: 5.8
 Tested up to: 7.1
