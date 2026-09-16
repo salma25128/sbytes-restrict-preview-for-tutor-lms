@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sbytes Restrict Preview for Tutor LMS 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sbytes-restrict-preview-for-tutor-lms\n"
-"POT-Creation-Date: 2026-09-15T15:23:04+00:00\n"
+"POT-Creation-Date: 2026-09-16T16:32:56+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,8 +19,8 @@ msgstr ""
 msgid "%d Free Lessons"
 msgstr ""
 
-#: sbytes-restrict-preview-for-tutor-lms.php:76
-msgid "%s requires Tutor LMS to be installed and active."
+#: sbytes-restrict-preview-for-tutor-lms.php:86
+msgid "%s requires Tutor LMS. Install and activate Tutor LMS, and this notice will disappear."
 msgstr ""
 
 #: includes/class-rptl-settings.php:176
@@ -124,7 +124,7 @@ msgid "Restrict preview lessons"
 msgstr ""
 
 #: includes/class-rptl-settings.php:102
-#: sbytes-restrict-preview-for-tutor-lms.php:77
+#: sbytes-restrict-preview-for-tutor-lms.php:87
 msgid "Sbytes Restrict Preview for Tutor LMS"
 msgstr ""
 

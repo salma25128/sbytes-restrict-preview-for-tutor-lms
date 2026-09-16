@@ -1,5 +1,5 @@
 === Sbytes Restrict Preview for Tutor LMS ===
-Contributors: salmabasuony
+Contributors: salmamohamed25
 Tags: tutor lms, lms, courses, registration, preview
 Requires at least: 5.8
 Tested up to: 7.1
@@ -32,6 +32,18 @@ Enrolled students, instructors and administrators keep the access they already h
 The plugin does not reimplement authentication. It embeds Tutor's own `[tutor_login]` and `[tutor_student_registration_form]` shortcodes, so validation, password handling and account creation all stay in Tutor where they belong. The redirect uses Tutor's own supported `redirect_to` field.
 
 Access is enforced on the server, so the restriction cannot be bypassed by opening the lesson URL directly or by disabling JavaScript.
+
+= Privacy =
+
+This plugin makes no external requests, loads no remote assets, and collects, stores or transmits no personal data. It reads Tutor LMS course and lesson data already in your database, and stores a single settings row. A short-lived cookie is set in the visitor's browser only to remember which lesson they were trying to reach, so they can be returned to it after signing in.
+
+= Source code =
+
+Development happens at https://github.com/salma25128/sbytes-restrict-preview-for-tutor-lms — issues and pull requests are welcome. The plugin ships as plain, unminified PHP, CSS and JavaScript with no build step, so the distributed code is the source code.
+
+= Trademarks =
+
+Tutor LMS is a trademark of Themeum. This plugin is an independent, third-party extension and is not affiliated with, endorsed by, or sponsored by Themeum.
 
 == Installation ==
 

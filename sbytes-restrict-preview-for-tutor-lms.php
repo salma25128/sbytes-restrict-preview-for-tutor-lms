@@ -67,13 +67,23 @@ function rptl_missing_tutor_notice() {
 	if ( ! current_user_can( 'activate_plugins' ) ) {
 		return;
 	}
+
+	// Only show where the notice is actionable — the Plugins screen and
+	// this plugin's own settings page — rather than on every admin screen.
+	// It also self-dismisses as soon as Tutor LMS is activated.
+	$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+	$allowed = array( 'plugins', 'plugins-network', 'settings_page_' . RPTL_Settings::PAGE_SLUG );
+
+	if ( ! $screen || ! in_array( $screen->id, $allowed, true ) ) {
+		return;
+	}
 	?>
 	<div class="notice notice-warning">
 		<p>
 			<?php
 			printf(
 				/* translators: %s: plugin name */
-				esc_html__( '%s requires Tutor LMS to be installed and active.', 'sbytes-restrict-preview-for-tutor-lms' ),
+				esc_html__( '%s requires Tutor LMS. Install and activate Tutor LMS, and this notice will disappear.', 'sbytes-restrict-preview-for-tutor-lms' ),
 				'<strong>' . esc_html__( 'Sbytes Restrict Preview for Tutor LMS', 'sbytes-restrict-preview-for-tutor-lms' ) . '</strong>'
 			);
 			?>

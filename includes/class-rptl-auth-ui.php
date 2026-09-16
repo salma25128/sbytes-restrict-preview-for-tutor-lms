@@ -99,9 +99,9 @@ class RPTL_Auth_UI {
 	 *
 	 * The redirect target is written into a hidden field on both forms by
 	 * the front-end script. Tutor supports this natively: its login
-	 * handler ends with wp_safe_redirect( $_POST['redirect_to'] ) and its
-	 * student registration handler reads $_REQUEST['redirect_to']. Both
-	 * are ordinary POST submissions, not AJAX.
+	 * handler passes the posted redirect_to value to wp_safe_redirect(),
+	 * and its student registration handler reads the same field from the
+	 * request. Both are ordinary POST submissions, not AJAX.
 	 *
 	 * @param string $redirect_to Where to send the visitor after signing in.
 	 * @return string
